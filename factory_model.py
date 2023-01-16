@@ -32,6 +32,9 @@ mg = ModelGeneratorNS(n=args["nodes"],
 #rng= args["rng"]
 #ws, edges, edge_attr, vertex_attr = mg.generate_graph()
 ws, edges, vertex_attr = mg.generate_graph()
+# print(f"ws: {ws}")
+# print(f"edges: {edges}")
+# print(f"vertex_attr: {vertex_attr}")
 
 g = Graph(n=args["nodes"], edges=edges, directed=True,
 				vertex_attrs=vertex_attr)
